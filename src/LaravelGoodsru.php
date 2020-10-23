@@ -97,7 +97,7 @@ class LaravelGoodsru
 
         return $this->sendRequest($values);
     }
-   
+
     /**
      * Отмена Лотов в Отправлении со стороны Продавца
      * @param  array  $items
