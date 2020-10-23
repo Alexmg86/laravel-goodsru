@@ -4,7 +4,7 @@
 [![Latest Stable Version](https://poser.pugx.org/alexmg86/laravel-goodsru/v/stable)](https://packagist.org/packages/alexmg86/laravel-goodsru)
 [![License](https://poser.pugx.org/alexmg86/laravel-goodsru/license)](https://packagist.org/packages/alexmg86/laravel-goodsru)
 
-## Для чего нужено пакет
+## Для чего нужен пакет
 
 Данный пакет предназначен для работы с API сервиса GoodsRu в Laravel.
 
@@ -78,7 +78,7 @@ $data = $api->confirm([1 => 1111, 2 => 2222]);
 #### reject
 Отмена лотов в отправлении со стороны продавца.  
 Указываем `$shipmentId` и передаем массив `$itemIndex => $goodId`.  
-Можно указать причину отмены `$reason`. По-умолчанию будет передано `OUT_OF_STOCK`.
+Можно указать причину отмены `$reason`. По умолчанию будет передано `OUT_OF_STOCK`.
 ```php
 $api = new LaravelGoodsru();
 $api->setShipment($shipmentId);
@@ -118,7 +118,7 @@ $data = $api->shipping([1, 2]);
 #### search
 Поиск по отправлениям.  
 Передаем `$period` равный количеству дней до текущей даты.  
-Необязательный массив `$statuses` для поиска по определенным статусам. По-умолчанию поиск будет по всем статусам.  
+Необязательный массив `$statuses` для поиска по определенным статусам. По умолчанию поиск будет по всем статусам.  
 ```php
 $api = new LaravelGoodsru();
 $data = $api->search($period, $statuses);
