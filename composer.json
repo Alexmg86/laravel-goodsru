@@ -1,0 +1,47 @@
+{
+  "name": "alexmg86/laravel-goodsru",
+  "description": "Laravel Goodsru API",
+  "license": "MIT",
+  "keywords": ["laravel", "goodsru", "api"],
+  "type": "library",
+  "authors": [
+    {
+      "name": "Aleksei Morozov",
+      "email": "alexmg86@mail.ru"
+    }
+  ],
+  "homepage": "https://github.com/alexmg86/laravelgoodsru",
+  "require": {
+    "php": ">=5.6.4",
+    "illuminate/support": ">=5.4"
+  },
+  "require-dev": {
+    "orchestra/testbench": ">=3.1",
+    "phpunit/phpunit": ">=5.7"
+  },
+  "autoload": {
+    "psr-4": {
+      "Alexmg86\\LaravelGoodsru\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Alexmg86\\LaravelGoodsru\\Tests\\": "tests"
+    }
+  },
+  "scripts": {
+    "phpunit": "phpunit"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Alexmg86\\LaravelGoodsru\\ServiceProvider"
+      ]
+    }
+  },
+  "config": {
+    "preferred-install": "dist",
+    "sort-packages": true,
+    "optimize-autoloader": true
+  }
+}
