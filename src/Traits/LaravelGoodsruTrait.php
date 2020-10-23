@@ -30,7 +30,7 @@ trait LaravelGoodsruTrait
     }
 
     /**
-     * Получение максимальное кол-во результатов в выдаче
+     * Получение максимального кол-ва результатов в выдаче
      * @return string
      */
     public function getCount()
